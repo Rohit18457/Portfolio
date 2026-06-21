@@ -1,0 +1,118 @@
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.story-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.story-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 24px;
+  width: 2px;
+  background: var(--glass-border);
+}
+
+.story-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.story-year {
+  font-weight: 800;
+  font-size: 1.1rem;
+  min-width: 60px;
+  background: var(--bg-primary);
+  padding: 4px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.story-content {
+  flex: 1;
+}
+
+.story-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.story-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.drives-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.drives-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.drive-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.drive-icon {
+  color: var(--accent-blue);
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(14, 165, 233, 0.1);
+  border-radius: 12px;
+}
+
+.drive-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.drive-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .drives-grid {
+    grid-template-columns: 1fr;
+  }
+}

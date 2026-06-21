@@ -1,0 +1,134 @@
+.terminal-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  padding: 24px;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #1e1e1e;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.term-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.term-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.term-btn.close { background: #ff5f56; }
+.term-btn.min { background: #ffbd2e; }
+.term-btn.max { background: #27c93f; }
+
+.term-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-family: monospace;
+  font-size: 0.9rem;
+}
+
+.term-home-btn {
+  background: transparent;
+  border: none;
+  color: #888;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.term-home-btn:hover {
+  color: #fff;
+}
+
+.terminal-body {
+  flex: 1;
+  background: rgba(10, 10, 14, 0.95);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 24px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #0ea5e9;
+  overflow-y: auto;
+  cursor: text;
+}
+
+.term-entry {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.term-entry.user {
+  color: #10b981;
+}
+
+.term-entry.system {
+  color: #8b5cf6;
+}
+
+.term-entry.output {
+  color: #f0f0f5;
+  padding-left: 16px;
+  white-space: pre-wrap;
+}
+
+.term-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.term-prompt {
+  color: #10b981;
+  margin-right: 8px;
+  white-space: nowrap;
+}
+
+.term-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #f0f0f5;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
+
+.terminal-link {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+.terminal-link:hover {
+  color: #8b5cf6;
+}
+
+@media (max-width: 768px) {
+  .terminal-page {
+    padding: 0;
+  }
+  .terminal-header {
+    border-radius: 0;
+  }
+  .terminal-body {
+    border-radius: 0;
+  }
+}
