@@ -63,27 +63,21 @@ const HeroSection = () => {
         
         <motion.div 
           className="hero-content"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="profile-wrapper">
-            <img 
-              src="/profile.jpeg" 
-              alt="Rohit Suryawanshi" 
-              className="profile-img" 
-            />
-            <div className="status-badge glass">
-              <span className="pulse-dot"></span> Available for Hire
-            </div>
-          </div>
-
+          <p className="greeting">Hi, I'm</p>
           <h1 className="hero-title">
-            Hi, I'm <span className="text-gradient">Rohit Suryawanshi</span>
+            ROHIT<br/>SURYAWANSHI
           </h1>
           
           <div className="hero-subtitle">
-            Building at the intersection of <TypeWriter words={words} />
+            <span className="text-gradient" style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Software Developer</span>
+            <br />
+            <span style={{fontSize: '1rem', marginTop: '8px', display: 'block', color: 'var(--text-secondary)'}}>
+              Building at the intersection of <TypeWriter words={words} />
+            </span>
           </div>
           
           <p className="hero-desc">
@@ -103,35 +97,47 @@ const HeroSection = () => {
             </button>
           </div>
 
-          <div className="social-links">
-            <a href="https://github.com/Rohit18457" target="_blank" rel="noreferrer" className="social-icon glass"><Github size={20}/></a>
-            <a href="https://www.linkedin.com/in/rohit-suryawanshi-816281290" target="_blank" rel="noreferrer" className="social-icon glass"><Linkedin size={20}/></a>
-            <a href="https://leetcode.com" target="_blank" rel="noreferrer" className="social-icon glass"><Code2 size={20}/></a>
+          <div className="hero-stats">
+            <div className="stat-card glass-card">
+              <h3 className="text-gradient">100+</h3>
+              <p>DSA Problems</p>
+            </div>
+            <div className="stat-card glass-card">
+              <h3 className="text-gradient">3</h3>
+              <p>Major Projects</p>
+            </div>
+            <div className="stat-card glass-card">
+              <h3 className="text-gradient">5</h3>
+              <p>Certifications</p>
+            </div>
+            <div className="stat-card glass-card">
+              <h3 className="text-gradient">1</h3>
+              <p>Internships</p>
+            </div>
           </div>
-
         </motion.div>
 
         <motion.div 
-          className="hero-stats"
+          className="hero-image-container"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="stat-card glass-card">
-            <h3 className="text-gradient">100+</h3>
-            <p>DSA Problems</p>
+          <div className="profile-wrapper large">
+            <div className="gradient-ring"></div>
+            <img 
+              src="/profile.jpeg" 
+              alt="Rohit Suryawanshi" 
+              className="profile-img" 
+            />
+            <div className="status-badge glass">
+              <span className="pulse-dot"></span> Available for Hire
+            </div>
           </div>
-          <div className="stat-card glass-card">
-            <h3 className="text-gradient">3</h3>
-            <p>Major Projects</p>
-          </div>
-          <div className="stat-card glass-card">
-            <h3 className="text-gradient">5</h3>
-            <p>Certifications</p>
-          </div>
-          <div className="stat-card glass-card">
-            <h3 className="text-gradient">1</h3>
-            <p>Internship Experience</p>
+          <div className="social-links hero-socials">
+            <a href="https://github.com/Rohit18457" target="_blank" rel="noreferrer" className="social-icon glass"><Github size={20}/></a>
+            <a href="https://www.linkedin.com/in/rohit-suryawanshi-816281290" target="_blank" rel="noreferrer" className="social-icon glass"><Linkedin size={20}/></a>
+            <a href="https://leetcode.com" target="_blank" rel="noreferrer" className="social-icon glass"><Code2 size={20}/></a>
           </div>
         </motion.div>
 
