@@ -61,7 +61,7 @@ const ProjectsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: idx * 0.2 }}
+              transition={{ delay: idx * 0.1 }}
             >
               <div className="project-image-wrapper">
                 <img src={project.image} alt={project.title} className="project-image" />
@@ -79,21 +79,6 @@ const ProjectsSection = () => {
                   {project.tech.map((t, i) => (
                     <span key={i} className="tech-tag glass">{t}</span>
                   ))}
-                </div>
-
-                <div className="project-details">
-                  <div className="detail-row">
-                    <Target size={16} className="text-gradient" />
-                    <span><strong>Features:</strong> {project.features.join(', ')}</span>
-                  </div>
-                  <div className="detail-row">
-                    <Layers size={16} className="text-gradient" />
-                    <span><strong>Challenges:</strong> {project.challenges}</span>
-                  </div>
-                  <div className="detail-row">
-                    <BookOpen size={16} className="text-gradient" />
-                    <span><strong>Learnings:</strong> {project.learnings}</span>
-                  </div>
                 </div>
               </div>
             </motion.div>

@@ -6,10 +6,13 @@
 
 .project-card {
   display: flex;
-  gap: 32px;
+  gap: 0; /* Remove gap, we will use padding in content */
   padding: 0;
   overflow: hidden;
   align-items: stretch;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
 }
 
 .project-image-wrapper {
@@ -67,15 +70,17 @@
 
 .project-content {
   flex: 0.55;
-  padding: 32px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .project-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.5px;
 }
 
 .project-desc {
@@ -92,33 +97,13 @@
 }
 
 .tech-tag {
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: var(--accent-purple);
-}
-
-.project-details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: auto;
-  border-top: 1px solid var(--glass-border);
-  padding-top: 24px;
-}
-
-.detail-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-}
-
-.detail-row strong {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
   color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
 }
 
 @media (max-width: 992px) {

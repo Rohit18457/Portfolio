@@ -45,11 +45,10 @@ const HeroSection = () => {
   const [isRocketLaunching, setIsRocketLaunching] = useState(false);
 
   const words = [
-    "Data Structures & Algorithms",
-    "Full-Stack Web Development",
-    "Cloud Computing",
-    "Generative AI",
-    "Problem Solving"
+    "Scalable Cloud Architectures",
+    "Generative AI Solutions",
+    "High-Performance Interfaces",
+    "Distributed Systems"
   ];
 
   const handleHireMe = () => {
@@ -73,15 +72,15 @@ const HeroSection = () => {
           </h1>
           
           <div className="hero-subtitle">
-            <span className="text-gradient" style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Software Developer</span>
+            <span className="text-gradient" style={{fontSize: '1.5rem', fontWeight: 'bold'}}>Software Engineer</span>
             <br />
             <span style={{fontSize: '1rem', marginTop: '8px', display: 'block', color: 'var(--text-secondary)'}}>
-              Building at the intersection of <TypeWriter words={words} />
+              Specializing in <TypeWriter words={words} />
             </span>
           </div>
           
           <p className="hero-desc">
-            Computer Science Student & Aspiring Software Engineer. Passionate about architecting scalable cloud solutions, building intuitive interfaces, and leveraging AI to solve real-world problems.
+            Passionate about architecting scalable cloud infrastructure, building intuitive high-performance interfaces, and leveraging generative AI to solve complex real-world problems.
           </p>
 
           <div className="hero-actions">
@@ -123,8 +122,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <div className="profile-wrapper large">
-            <div className="gradient-ring"></div>
+          <div className="profile-wrapper large glass-card">
             <img 
               src="/profile.jpeg" 
               alt="Rohit Suryawanshi" 
