@@ -44,7 +44,7 @@ const TerminalPage = () => {
     contact: () => [
       'Email: rohitsuryawanshi775682@gmail.com',
       'Phone: +91 7756822035',
-      'LinkedIn: linkedin.com/in/rohit-suryawanshi-816281290',
+      'LinkedIn: linkedin.com/in/rohit-suryawanshi-dev',
       'GitHub: github.com/Rohit18457'
     ],
     resume: () => [

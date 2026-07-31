@@ -80,7 +80,7 @@ const CodingProfilesSection = () => {
 
           {/* LinkedIn Profile */}
           <motion.a 
-            href="https://www.linkedin.com/in/rohit-suryawanshi-816281290" 
+            href="https://www.linkedin.com/in/rohit-suryawanshi-dev" 
             target="_blank" 
             rel="noreferrer"
             className="profile-card glass-card"

@@ -67,7 +67,7 @@ const ContactSection = () => {
             <div className="contact-socials">
               <p>Or connect with me on socials:</p>
               <div className="social-links">
-                <a href="https://www.linkedin.com/in/rohit-suryawanshi-816281290" target="_blank" rel="noreferrer" className="social-icon glass"><Linkedin size={20}/></a>
+                <a href="https://www.linkedin.com/in/rohit-suryawanshi-dev" target="_blank" rel="noreferrer" className="social-icon glass"><Linkedin size={20}/></a>
                 <a href="https://github.com/Rohit18457" target="_blank" rel="noreferrer" className="social-icon glass"><Github size={20}/></a>
               </div>
             </div>
