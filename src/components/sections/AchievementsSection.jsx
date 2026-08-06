@@ -46,6 +46,13 @@ const AchievementsSection = () => {
       date: "Certification",
       desc: "Learned cloud computing concepts and AWS core services.",
       certImage: "/certificates/aws.pdf"
+    },
+    {
+      id: 7,
+      title: "Python Developer by freeCodeCamp",
+      date: "Certification",
+      desc: "Earned Python Developer certification from freeCodeCamp.",
+      certImage: "/certificates/python.pdf"
     }
   ];
 
