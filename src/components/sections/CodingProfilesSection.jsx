@@ -65,11 +65,11 @@ const CodingProfilesSection = () => {
             <div className="lc-stats">
               <div className="lc-stat easy">
                 <span>Easy</span>
-                <strong>40</strong>
+                <strong>100</strong>
               </div>
               <div className="lc-stat medium">
                 <span>Medium</span>
-                <strong>40</strong>
+                <strong>80</strong>
               </div>
               <div className="lc-stat hard">
                 <span>Hard</span>

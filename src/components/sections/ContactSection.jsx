@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MessageSquare, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 import { FaGithub as Github, FaLinkedin as Linkedin } from 'react-icons/fa';
 import './ContactSection.css';
 
@@ -15,11 +15,14 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    // Mock API call
+    
+    const subject = encodeURIComponent(`Portfolio Contact from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:rohitsuryawanshi775682@gmail.com?subject=${subject}&body=${body}`;
+    
     setTimeout(() => {
       setIsSubmitting(false);
       setFormData({ name: '', email: '', message: '' });
-      alert("Message sent successfully!");
     }, 1500);
   };
 
@@ -49,20 +52,20 @@ const ContactSection = () => {
             </p>
             
             <a href="mailto:rohitsuryawanshi775682@gmail.com" className="contact-link glass-card">
-              <div className="contact-icon glass"><Mail size={24} className="text-gradient" /></div>
+              <div className="contact-icon glass"><Mail size={24} color="#3b82f6" /></div>
               <div>
                 <h4>Email Me</h4>
                 <span>rohitsuryawanshi775682@gmail.com</span>
               </div>
             </a>
             
-            <div className="contact-link glass-card" style={{marginTop: '-20px'}}>
-              <div className="contact-icon glass"><MessageSquare size={24} className="text-gradient" /></div>
+            <a href="tel:+917756822035" className="contact-link glass-card" style={{marginTop: '-20px'}}>
+              <div className="contact-icon glass"><Phone size={24} color="#3b82f6" /></div>
               <div>
                 <h4>Call Me</h4>
                 <span>+91 7756822035</span>
               </div>
-            </div>
+            </a>
 
             <div className="contact-socials">
               <p>Or connect with me on socials:</p>

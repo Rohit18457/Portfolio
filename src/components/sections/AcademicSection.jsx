@@ -40,8 +40,8 @@ const AcademicSection = () => {
             viewport={{ once: true }}
           >
             <div className="card-header">
-              <div className="icon-wrapper glass">
-                <GraduationCap size={32} className="text-gradient" />
+              <div className="icon-wrapper glass" style={{ padding: '0', overflow: 'hidden' }}>
+                <img src="/mgm-logo.jpeg" alt="MGM College Logo" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
               <div>
                 <h3 className="degree-title">{academics.degree}</h3>
