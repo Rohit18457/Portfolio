@@ -17,7 +17,6 @@ const SkillsSection = () => {
   ];
 
   const skills = [
-    { name: 'C++', category: 'Languages', level: 'Advanced' },
     { name: 'Python', category: 'Languages', level: 'Intermediate' },
     { name: 'JavaScript', category: 'Languages', level: 'Advanced' },
     { name: 'HTML', category: 'Web', level: 'Advanced' },
