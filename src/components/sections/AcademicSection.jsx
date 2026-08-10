@@ -70,33 +70,7 @@ const AcademicSection = () => {
             </div>
           </motion.div>
 
-          <motion.div 
-            className="progress-container"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <h3>Core Competencies</h3>
-            <div className="progress-list">
-              {progressBars.map((skill, idx) => (
-                <div key={idx} className="progress-item">
-                  <div className="progress-label">
-                    <span>{skill.name}</span>
-                    <span>{skill.value}%</span>
-                  </div>
-                  <div className="progress-bar-bg glass">
-                    <motion.div 
-                      className="progress-bar-fill"
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.value}%` }}
-                      transition={{ duration: 1, delay: 0.2 }}
-                      viewport={{ once: true }}
-                    ></motion.div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </motion.div>
+
         </div>
       </div>
     </section>

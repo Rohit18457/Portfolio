@@ -29,7 +29,6 @@ const SkillsSection = () => {
     { name: 'MongoDB', category: 'Database', level: 'Intermediate' },
     { name: 'AWS', category: 'Cloud', level: 'Intermediate' },
     { name: 'IAM', category: 'Cloud', level: 'Intermediate' },
-    { name: 'EC2', category: 'Cloud', level: 'Intermediate' },
     { name: 'S3', category: 'Cloud', level: 'Intermediate' },
     { name: 'Generative AI', category: 'AI', level: 'Intermediate' },
     { name: 'Prompt Engineering', category: 'AI', level: 'Advanced' },

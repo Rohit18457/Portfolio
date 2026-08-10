@@ -98,7 +98,7 @@ const HeroSection = () => {
 
           <div className="hero-stats">
             <div className="stat-card glass-card">
-              <h3 className="text-gradient">100+</h3>
+              <h3 className="text-gradient">200+</h3>
               <p>DSA Problems</p>
             </div>
             <div className="stat-card glass-card">
