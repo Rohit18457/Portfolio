@@ -135,7 +135,7 @@ const HeroSection = () => {
           <div className="social-links hero-socials">
             <a href="https://github.com/Rohit18457" target="_blank" rel="noreferrer" className="social-icon glass"><Github size={20}/></a>
             <a href="https://www.linkedin.com/in/rohit-suryawanshi-dev" target="_blank" rel="noreferrer" className="social-icon glass"><Linkedin size={20}/></a>
-            <a href="https://leetcode.com" target="_blank" rel="noreferrer" className="social-icon glass"><Code2 size={20}/></a>
+            <a href="https://leetcode.com/u/Rohit_Suryawanshi18457/" target="_blank" rel="noreferrer" className="social-icon glass"><Code2 size={20}/></a>
           </div>
         </motion.div>
 

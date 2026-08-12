@@ -43,7 +43,7 @@ const CodingProfilesSection = () => {
 
           {/* LeetCode Profile */}
           <motion.a 
-            href="https://leetcode.com" 
+            href="https://leetcode.com/u/Rohit_Suryawanshi18457/" 
             target="_blank" 
             rel="noreferrer"
             className="profile-card glass-card"
