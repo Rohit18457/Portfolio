@@ -59,7 +59,7 @@ const CodingProfilesSection = () => {
             <div className="profile-stats">
               <div className="stat-item">
                 <TrendingUp size={16} className="text-gradient" />
-                <span>100+ Solved</span>
+                <span>250+ Solved</span>
               </div>
             </div>
             <div className="lc-stats">
